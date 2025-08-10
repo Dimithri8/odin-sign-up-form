@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+main {
+  background: url(images/background-img.avif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+}
+.main-section {
+  background-color: white;
+  flex-basis: 70%;
+}
+.sidebar {
+  height: 100vh;
+  display: flex;
+  flex-basis: 30%;
+  position: relative;
+}
+.logo-container {
+  position: absolute;
+  top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: rgb(0, 0, 0, 0.5);
+  align-self: center;
+  width: 100%;
+  color: white;
+  font-size: 50px;
+  font-family: "Bebas Neue", sans-serif;
+}
+.sidebar-logo {
+  width: 60px;
+  height: auto;
+}
