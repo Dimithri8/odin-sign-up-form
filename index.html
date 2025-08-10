@@ -100,5 +100,19 @@
         </section>
       </section>
     </main>
+    <script>
+      const password = document.querySelector("#password");
+      const confirmPassword = document.querySelector("#confirm-password");
+      const form = document.querySelector("form");
+      form.addEventListener("submit", passwordValidation);
+
+      function passwordValidation() {
+        if (password.value === confirmPassword.value) {
+          alert("Both passwords match");
+        } else {
+          alert("Passwords don't match");
+        }
+      }
+    </script>
   </body>
 </html>
