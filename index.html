@@ -23,43 +23,80 @@
           <p class="information">
             This is not a real online service! You know you need something like
             this in your life to help you realize your deepes dreams. Sign up
-            <em>now</em> to get started.
+            <em>now</em> to get started. <br /><br />
+            You <em>know</em> you want to.
           </p>
-          <p class="information">You <em>know</em> you want to.</p>
         </section>
-        <section class="form container">
-          <form action="/create-account" method="post">
+        <section class="form-container">
+          <form action="#" method="post">
             <div class="form-fields-container">
-              <h1>Let's do this!</h1>
-              <label for="first-name">First Name</label>
-              <input type="text" id="first-name" name="first-name" required />
-
-              <label for="last-name">Last Name</label>
-              <input type="text" id="last-name" name="last-name" required />
-              <label for="email">Email</label>
-              <input type="email" id="email" name="femail" required />
-
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" required />
-
-              <label for="password">Password</label>
-              <input type="password" id="password" name="password" required />
-
-              <label for="confirm-password">Password</label>
-              <input
-                type="password"
-                id="confirm-password"
-                name="password"
-                required
-              />
+              <h1 class="form-heading">Let's do this!</h1>
+              <fieldset class="field-wrapper">
+                <div class="input-wrapper">
+                  <label for="first-name">First Name</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    required
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" name="last-name" required />
+                </div>
+              </fieldset>
+              <fieldset class="field-wrapper">
+                <div class="input-wrapper">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="femail" required />
+                </div>
+                <div class="input-wrapper">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    maxlength="10"
+                    id="phone"
+                    name="phone"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <fieldset class="field-wrapper">
+                <div class="input-wrapper">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                    minlength="8"
+                    maxlength="16"
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <label for="confirm-password">Confirm Password</label>
+                  <input
+                    type="password"
+                    id="confirm-password"
+                    name="confirm-password"
+                    required
+                    minlength="8"
+                    maxlength="16"
+                  />
+                </div>
+              </fieldset>
             </div>
-            <button class="create-account-btn" type=" submit">
-              Create Account
-            </button>
+            <div class="cta-section">
+              <button class="create-account-btn" type="submit">
+                Create Account
+              </button>
+              <p>
+                Already have an account?
+                <a class="login-link" href="#">Login</a>
+              </p>
+            </div>
           </form>
-        </section>
-        <section class="login-quick-link">
-          <p>Already have an account? <a href="#">Login</a></p>
         </section>
       </section>
     </main>
