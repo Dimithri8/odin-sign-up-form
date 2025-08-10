@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside class="side-img-section">
+      <div class="logo-container">
+        <img class="side-img-logo" src="images/odin-logo.png" alt="odin-logo" />
+        <p class="side-img-text">ODIN</p>
+      </div>
+    </aside>
+    <main>
+      <section class="information-container">
+        <p class="information">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepes dreams. Sign up
+          <em>now</em> to get started.
+        </p>
+        <p class="information">You <em>know</em> you want to.</p>
+      </section>
+      <section class="form container">
+        <form action="/create-account" method="post">
+          <div class="form-fields-container">
+            <h1>Let's do this!</h1>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required />
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="femail" required />
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+
+            <label for="confirm-password">Password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="password"
+              required
+            />
+          </div>
+          <button class="create-account-btn" type=" submit">
+            Create Account
+          </button>
+        </form>
+      </section>
+      <section class="login-quick-link">
+        <p>Already have an account? <a href="#">Login</a></p>
+      </section>
+    </main>
+  </body>
+</html>
